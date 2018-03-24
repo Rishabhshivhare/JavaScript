@@ -1,0 +1,10 @@
+// Call inspect function to disable inspect Element in web page.
+
+function inspect(){
+            window.oncontextmenu = function () {
+                return false;
+                }
+            $(document).keydown(function (event) {
+            if (event.keyCode == 123) {
+            return false;
+            }
